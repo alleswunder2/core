@@ -28,8 +28,8 @@ class Switcher extends _P {
 	 * @return array(string => array(string => string))
 	 */
 	private function map() {return dfc($this, function() {return dftr(df_lang(), [
-		'de' => ['de' => 'Deutschland', 'uk' => 'Großbritannien', 'us' => 'USA', 'fr' => 'Frankreich']
-		,'en' => ['de' => 'Germany', 'uk' => 'United Kingdom', 'us' => 'United States', 'fr' => 'France']
-		,'fr' => ['de' => 'Allemagne', 'uk' => 'Royaume-Uni', 'us' => 'États-Unis', 'fr' => 'France']
+		'dk' => ['dk' => 'Dansk', 'en' => 'Engelsk', 'ru' => 'Russisk']
+		,'en' => ['dk' => 'Danish', 'en' => 'English', 'ru' => 'Russian']
+		,'ru' => ['dk' => 'Датский', 'en' => 'Английский', 'ru' => 'Русский']
 	]);});}
 }

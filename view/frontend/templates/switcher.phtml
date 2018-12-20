@@ -3,7 +3,7 @@
 	$currentId = df_store_id(); /** @var int $currentId */
 	$stores = df_stores(); /** @var S[] $stores */
 ?>
-<div class='switcher store switcher-store' id='switcher-store'>
+<div class='switcher language switcher-language' id='switcher-language'>
     <div class='actions dropdown options switcher-options'>
         <?php foreach ($stores as $s): /** @var S $s */ ?>
 			<?php if ($currentId == $s->getId()): ?>

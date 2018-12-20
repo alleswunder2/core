@@ -5,14 +5,13 @@
 >
 	<head><css src='AllesWunder_Core::main.css'/></head>
 	<body>
-		<referenceBlock name='store_switcher' remove='true'/>
-		<referenceBlock name='store.settings'>
+		<referenceContainer name='header.panel'>
 			<block
-				before='-'
+				before='skip_to_content'
 				class='AllesWunder\Core\Block\Switcher'
-				name='alleswunder_store_switcher'
+				name='store.settings.language'
 				template='AllesWunder_Core::switcher.phtml'
 			/>
-		</referenceBlock>
+		</referenceContainer>
 	</body>
 </page>

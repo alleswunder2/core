@@ -1,6 +1,6 @@
 {
 	"name": "alleswunder/core"
-	,"version": "1.0.0"
+	,"version": "1.0.1"
 	,"description": "A custom store module for alleswunder.com"
 	,"type": "magento2-module"
 	,"homepage": "https://github.com/alleswunder2/core"

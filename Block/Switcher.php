@@ -18,9 +18,9 @@ class Switcher extends _P {
 	 * @param S $s
 	 * @return string
 	 */
-	final function post(S $s) {return df_post_h()->getPostData(
-		$this->getUrl('stores/store/switch'), [IStoreResolver::PARAM_NAME => $s->getCode()]
-	);}
+	final function post(S $s) {return df_post_h()->getPostData($this->getUrl('stores/store/switch'), [
+		IStoreResolver::PARAM_NAME => $s->getCode(), '___from_store' => df_store_code()
+	]);}
 
 	/**
 	 * 2018-07-25

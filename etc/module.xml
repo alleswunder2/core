@@ -7,6 +7,11 @@
 		<sequence>
 			<module name='Magento_Theme'/>
 <!-- 2019-02-08
+"Remove white gaps from product lists in the mobile mode"
+https://github.com/alleswunder2/issues/issues/20
+https://www.upwork.com/ab/f/contracts/21555660 -->
+			<module name='WeltPixel_CategoryPage'/>
+<!-- 2019-02-08
 "The topmost sticky message is croped on the frontend checkut page"
 https://github.com/alleswunder2/issues/issues/25
 https://www.upwork.com/ab/f/contracts/21555666 -->

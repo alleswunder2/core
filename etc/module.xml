@@ -6,6 +6,11 @@
 	<module name='AllesWunder_Core' setup_version='0.0.1'>
 		<sequence>
 			<module name='Magento_Theme'/>
+<!-- 2019-02-08
+"The topmost sticky message is croped on the frontend checkut page"
+https://github.com/alleswunder2/issues/issues/25
+https://www.upwork.com/ab/f/contracts/21555666 -->
+			<module name='WeltPixel_CustomHeader'/>
 		</sequence>
 	</module>
 </config>

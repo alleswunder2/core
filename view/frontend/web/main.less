@@ -4,11 +4,21 @@
 // https://github.com/alleswunder2/issues/issues/25
 // https://www.upwork.com/ab/f/contracts/21555666
 @media only screen and (min-width: 1120px) {
-	:root .theme-pearl.checkout-index-index .page-header {
-		> .panel.wrapper > .panel.header {
-			height: auto !important; padding: 10px 20px !important;
-		}
-		// 2019-02-08 The language switcher is shown twice for an unknown reason.
-		> .header.content > .panel.header > ul.compare.wrapper + #switcher-language {display: none !important;}
+	:root .theme-pearl.checkout-index-index .page-header > .panel.wrapper > .panel.header {
+		height: auto !important; padding: 10px 20px !important;
+	}
+	// 2019-02-08 The language switcher is shown twice for an unknown reason.
+	// https://www.upwork.com/messages/rooms/room_ecadce47a7506290f08fbdb6899ee842/story_fd8cb85d347f59e71fb6da6f26d3173c
+	.page-header > .header.content > .panel.header > ul.compare.wrapper + #switcher-language {
+		display: none !important;
 	}
 }
+@media only screen and (max-width: 1119px) {
+	.page-products {
+		.category-header > .inner-header {margin: 0 auto; width: 50%;}
+		#layered-filter-block:not(.active) {.filter-title > strong {top: -35px;}}
+	}
+}
+@media (max-width: 450px) {.page-with-filter .columns .sidebar-main {
+	margin-bottom: 0px !important; margin-top: 0px !important;
+}}

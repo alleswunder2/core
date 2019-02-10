@@ -8,13 +8,15 @@ use Magento\Store\Model\Store as S;
 class Switcher extends _P {
 	/**
 	 * 2018-07-25
+	 * @used-by vendor/alleswunder/core/view/frontend/templates/switcher.phtml
 	 * @param S $s
 	 * @return string
 	 */
-	final function name(S $s) {return $this->escapeHtml(dftr($s->getCode(), $this->map()));}
+	final function name(S $s) {return dftr(substr($s->getCode(), -2), $this->map());}
 
 	/**
 	 * 2018-07-25
+	 * @used-by vendor/alleswunder/core/view/frontend/templates/switcher.phtml
 	 * @param S $s
 	 * @return string
 	 */
@@ -27,9 +29,5 @@ class Switcher extends _P {
 	 * @used-by name()
 	 * @return array(string => array(string => string))
 	 */
-	private function map() {return dfc($this, function() {return dftr(df_lang(), [
-		'dk' => ['dk' => 'Dansk', 'en' => 'Engelsk', 'ru' => 'Russisk']
-		,'en' => ['dk' => 'Danish', 'en' => 'English', 'ru' => 'Russian']
-		,'ru' => ['dk' => 'Датский', 'en' => 'Английский', 'ru' => 'Русский']
-	]);});}
+	private function map() {return ['da' => 'Dansk', 'en' => 'English', 'fa' => 'فارسی', 'ru' => 'Русский'];}
 }

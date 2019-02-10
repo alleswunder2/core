@@ -4,14 +4,4 @@
 	xsi:noNamespaceSchemaLocation='urn:magento:framework:View/Layout/etc/page_configuration.xsd'
 >
 	<head><css src='AllesWunder_Core::main.css'/></head>
-	<body>
-		<referenceContainer name='header.panel'>
-			<block
-				before='skip_to_content'
-				class='AllesWunder\Core\Block\Switcher'
-				name='store.settings.language'
-				template='AllesWunder_Core::switcher.phtml'
-			/>
-		</referenceContainer>
-	</body>
 </page>

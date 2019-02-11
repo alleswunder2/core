@@ -5,22 +5,27 @@
 define(['jquery'], function($) {return (function() {
 	var $img = $('.aw-logo > img');
 	var open = false;
-	$img.hover(
+	var $w = $(window);
+	/*$img.hover(
 		function(e) {
-			var $this = $(this);
-			if (!open) {
-				e.preventDefault();
-				$this.trigger('click.toggleDropdown');
-				open = true;
+			if (1119 < $w.width()) {
+				var $this = $(this);
+				if (!open) {
+					e.preventDefault();
+					$this.trigger('click.toggleDropdown');
+					open = true;
+				}
 			}
 		}
 		,function(e) {
-			var $this = $(this);
-			if (open) {
-				e.preventDefault();
-				$this.trigger('click.toggleDropdown');
-				open = false;
+			if (1119 < $w.width()) {
+				var $this = $(this);
+				if (open) {
+					e.preventDefault();
+					$this.trigger('click.toggleDropdown');
+					open = false;
+				}
 			}
 		}
-	);
+	); */
 });});

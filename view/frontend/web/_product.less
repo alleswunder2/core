@@ -5,7 +5,16 @@
 .catalog-product-view .product-info-price {
 	> .aw-logo {
 		display: inline-block; margin: 0;
-		> .field-tooltip-content {left: 100px;}
+		> .field-tooltip-content {
+			left: 100px; top: -40px;
+			&::after, &::before {top: 40%;}
+			@media only screen and (max-width: 1119px) {
+				left: -8em; top: 65px;
+				&::after, &::before {right: 45%;}
+				&::after {top: 1px;}
+				&::before {top: 0;}
+			}
+		}
 	}
 	> .price-box {vertical-align: bottom !important;}
 }

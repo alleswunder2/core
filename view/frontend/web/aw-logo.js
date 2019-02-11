@@ -6,7 +6,7 @@ define(['jquery'], function($) {return (function() {
 	var $img = $('.aw-logo > img');
 	var open = false;
 	var $w = $(window);
-	/*$img.hover(
+	$img.hover(
 		function(e) {
 			if (1119 < $w.width()) {
 				var $this = $(this);
@@ -27,5 +27,5 @@ define(['jquery'], function($) {return (function() {
 				}
 			}
 		}
-	); */
+	);
 });});

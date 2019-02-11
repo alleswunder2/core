@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<page 
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:noNamespaceSchemaLocation='urn:magento:framework:View/Layout/etc/page_configuration.xsd'
+>
+	<body>
+<!-- 2019-02-10
+"Add the AWQuality logo to all product pages of the AWQuality category"
+https://www.upwork.com/ab/f/contracts/21523399
+https://github.com/alleswunder2/core/issues/1 -->
+		<referenceContainer name='product.info.price'>
+			<block
+				after='product.price.final'
+				class='Magento\Framework\View\Element\Template'
+				name='aw.logo'
+				template='AllesWunder_Core::aw-logo.phtml'
+			>
+			</block>
+		</referenceContainer>
+	</body>
+</page>

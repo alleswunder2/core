@@ -4,6 +4,19 @@
 	xsi:noNamespaceSchemaLocation='urn:magento:framework:View/Layout/etc/page_configuration.xsd'
 >
 	<body>
+		<referenceBlock name='product.info.details'>
+			<block
+				after='product.info.description'
+				class='Magento\Framework\View\Element\Template'
+				group='detailed_info'
+				name='aw_quality'
+				template='AllesWunder_Core::aw-tab.phtml'
+			>
+				<arguments>
+					<argument translate="true" name="title" xsi:type="string">AWQUALITY</argument>
+				</arguments>
+			</block>
+		</referenceBlock>
 <!-- 2019-02-10
 "Add the AWQuality logo to all product pages of the AWQuality category"
 https://www.upwork.com/ab/f/contracts/21523399

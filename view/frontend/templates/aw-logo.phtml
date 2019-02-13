@@ -3,6 +3,7 @@
 https://www.upwork.com/ab/f/contracts/21523399
 https://github.com/alleswunder2/core/issues/1 -->
 <?php
+	use AllesWunder\Core\Settings\General\AWLogo as S;
 	use Magento\Catalog\Model\Product as P;
 	$p = df_registry('current_product'); /** @var P $p */
 	if (array_intersect([15], df_int($p->getCategoryIds()))) {
@@ -16,7 +17,7 @@ https://github.com/alleswunder2/core/issues/1 -->
 				src='<?= df_asset_url('AllesWunder_Core::i/aw-logo.png') ?>'
 				tabindex='0'
 			/>
-			<div class='field-tooltip-content' data-target='dropdown'><?= __('AW_LOGO_HOVER_TEXT') ?></div>
+			<div class='field-tooltip-content' data-target='dropdown'><?= S::s()->hoverText() ?></div>
 		</div>
 		<?= df_js('AllesWunder_Core', 'aw-logo');
 	}

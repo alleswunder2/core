@@ -1,4 +1,4 @@
-A custom module for [alleswunder.com](https://alleswunder.com).
+A custom module for [alleswunder.com](https://alleswunder.com) (Magento 2).
 
 ## How to install
 ```
